@@ -2,6 +2,10 @@
 
 > Tutori: Popa Teodora, Rîmboi Eusebiu
 
+- Daca doriti sa cititi o lectie specifica, puteti consulta cuprinsul [aici](./administrative_stuff/table_of_contents.md).
+- Daca vreti sa exersati mai mult la prolog, va recomand [site-ul asta](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/).
+
+
 ## Informatii organizatorice
 - In fiecare lectie de tutoriat ne propunem sa prezentam pe scurt teoria de **logica matematica** de la curs si sa rezolvam exercitii cu ajutorul ei pentru consolidarea intelegerii conceptelor
 - Pe partea de **prolog**, abordarea va fi similara: vom prezenta conceptele de teorie, urmand ca apoi sa rezolvam diverse aplicatii cu acestea

@@ -1,3 +1,10 @@
+## Table of contents
+- [Table of contents](#table-of-contents)
+- [Notiuni introductive de Prolog](#notiuni-introductive-de-prolog)
+- [Sintaxa Prolog](#sintaxa-prolog)
+  - [**Operatorii**](#operatorii)
+- [Executia unui program](#executia-unui-program)
+
 ## Notiuni introductive de Prolog
 - Logica matematica reprezinta o ramura a matematicii care, pe scurt, se ocupa cu formalizarea modurilor de gandire utilizate in diverse situatii din matematica si nu numai precum demonstratii, deductii, calcule etc.; de exemplu, logica matematica ne demonstreaza ca principiul reducerii la absurd este corect sau ca este corect sa scriem `3 + 2 = 5`
 - Pentru a realiza aceste lucruri, pe parcursul cursului se vor defini sintaxele (cum se scrie corect) si semanticile (cum se interpreteaza corect) alte Logicii Propozitionale si ale Logicii de Ordinul I, urmand ca apoi ele sa se utilizeze pentru a formaliza demonstratiile pe care le intalnim peste tot
@@ -65,6 +72,7 @@ female(sophia).
 **2. Comparison Operators**
 | Operator | Meaning | Example |
 |----------|---------|---------|
+| `=:=`  | Equality check (syntactic comparison between constants) | `c1 =:= c2.` |
 | `==`  | Equality check (syntactic comparison) | `X == Y.` |
 | `\==` | Not equal | `X \== Y.` |
 | `=`   | Unification (assigns values if possible) | `X = 5.` |
@@ -94,7 +102,7 @@ female(sophia).
 
 
 ## Executia unui program
-- Inlocuire
-- Pattern matching si backtracking
-- Tipuri de rezultate obtinute
-- **Trace**
+- Union, resolution, backtracking
+- Pattern matching & strict rules ordering
+- Tipuri de rezultate obtinute: `true`, list of matches, `false`
+- `-? trace command`
