@@ -1,9 +1,9 @@
 ## Table of contents
 - [Table of contents](#table-of-contents)
 - [Notiuni introductive de Prolog](#notiuni-introductive-de-prolog)
-- [Sintaxa Prolog](#sintaxa-prolog)
-  - [**Operatorii**](#operatorii)
-- [Executia unui program](#executia-unui-program)
+- [Sintaxa Prolog-ului](#sintaxa-prolog-ului)
+- [**Operatorii**](#operatorii)
+- [Executia unui program (mai pe larg in lectia 3)](#executia-unui-program-mai-pe-larg-in-lectia-3)
 
 ## Notiuni introductive de Prolog
 - Logica matematica reprezinta o ramura a matematicii care, pe scurt, se ocupa cu formalizarea modurilor de gandire utilizate in diverse situatii din matematica si nu numai precum demonstratii, deductii, calcule etc.; de exemplu, logica matematica ne demonstreaza ca principiul reducerii la absurd este corect sau ca este corect sa scriem `3 + 2 = 5`
@@ -53,15 +53,15 @@ female(sophia).
 ?- sibling(paul, X).
 ```
 
-## Sintaxa Prolog
-- Limbajul Prolog lucreaza cu **predicate**, **variabile** si **constante**
-- **Predicatele** reprezinta fie **facts** fie rationamente; in cazul rationamentelor puteti sa le vizualizati ca niste functii recursive ce cauta acele **facts** prin pattern matching exhaustiv (toate variantele posibile); **exemplificare**
-- **Variabilele** sunt componente ale programului ce au rolul de a reprezenta constantele in definirea predicatelor; in cadrul interogarilor ele vor fi inlocuite de constantele aferente, fie de utilizator, fie de program prin backtracking **ele trebuie sa inceapa cu litera mare sau cu `_`** altfel vor fi interpretate drept constante; **exemplificare**
-- **Constantele** reprezinta componente ale programului care definesc lucruri concrete: un numar, un string, un atom, ce se vor folosi pentru a inlocui variabilele
-- **Un atom** este o secventa de litere, cifre si alte simboluri (**trebuie sa inceapa neaparat cu litera mica**) ce defineste o valoare fixa (un fel de obiect constant); putin neintuitivi, ei au rolul de a abstractiza valori
+## Sintaxa Prolog-ului
+- Limbajul Prolog lucreaza cu **termeni**. Acestia sunt de mai multe tipuri: **atomi**, **numere**, **variabile** si **structuri complexe** - **Un atom** este o secventa de litere, cifre si alte simboluri speciale (`+, -, *, /, <, >, =, :, ., &, ~, _`) ce defineste un string; totusi, spre deosebire de alte limbaje, el poate sa nu fie intre ghilimele, ci pur si simplu o secventa de simboluri fara spatii, caz in care **trebuie sa inceapa neaparat cu litera mica**
+- **Atomii** si **numerele** alcatuiesc **constantele** limbajului prolog
+- **Variabilele** sunt componente ale programului ce au rolul de a reprezenta constantele in definirea predicatelor; in cadrul interogarilor ele vor fi inlocuite de constantele aferente, fie de utilizator, fie de program prin backtracking; **ele trebuie sa inceapa cu litera mare sau cu `_`** altfel vor fi interpretate drept constante (**exemplificare**)
+- **Structurile complexe** constau in, fie **functii**, fie **predicate**. Diferenta dintre ele este in rolul lor: in timp ce functiile au rolul de a returna un output, predicatele au rolul de a da informatii programului (**exemplificare**)
+- **Predicatele** reprezinta fie **fapte** fie **rationamente**; in cazul rationamentelor puteti sa le vizualizati ca niste functii recursive ce cauta acele **fapte** prin pattern matching exhaustiv (toate variantele posibile) (**exemplificare**)
 
-### **Operatorii**
-
+## **Operatorii**
+- **Operatorii pot fi vazuti ca niste predicate**. Adica, `t1 op t2` este totuna cu `op(t1, t2)`
 **1. Logical Operators**
 | Operator | Meaning | Example |
 |----------|---------|---------|
@@ -101,8 +101,8 @@ female(sophia).
 | `\==` | Strict inequality | `f(X) \== f(1).` |
 
 
-## Executia unui program
+## Executia unui program (mai pe larg in lectia 3)
 - Union, resolution, backtracking
 - Pattern matching & strict rules ordering
 - Tipuri de rezultate obtinute: `true`, list of matches, `false`
-- `-? trace command`
+- `-? trace query_body`

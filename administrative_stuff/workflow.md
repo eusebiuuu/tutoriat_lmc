@@ -1,15 +1,16 @@
-- Meeting with the collaborators
-	- 
+- Set the topics for next lesson
 - Summarize the theory materials
+  - indications: practical examples, intuition, drawings
   - [Check the course](https://cs.unibuc.ro/courses/lmc/)
   - [official labs](https://cs.unibuc.ro/courses/lmc/)
-  - [official docs](https://lpn.swi-prolog.org/lpnpage.php?pagetype=html&pageid=lpn-html)
+  - Prolog Now pdf
 - Practice exercises
   - [full seminars](https://github.com/anamariapanait10/FMI-BSc-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
+  - Official labs
   - [99 prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
 - Integrate exam exercises
 - Push the final version and announce the collaborator
-- Make announcement to community about what will be taught next
+- Make announcement to community about what will be taught next & update the table of contents
 - Teaching plan recap
   - Prepare the presentation devices:
     - writing board
@@ -19,5 +20,5 @@
   - Overview
   - Ask for taught lessons lately
   - Update the materials with asked questions
-  - Presentation based on written materials & examples & continuous feedback & continuous talk
+  - Ask questions about next topic & presentation based on written materials & examples & continuous feedback & continuous talk
   - Individual work after presentation
