@@ -11,14 +11,27 @@
 - Integrate exam exercises
 - Push the final version and announce the collaborator
 - Make announcement to community about what will be taught next & update the table of contents
-- Teaching plan recap
+- Teaching plan setting
   - Prepare the presentation devices:
     - writing board
     - video proiector
   - Materials recap
   - Foile de prezenta & upload on Drive
   - Overview
-  - Ask for taught lessons lately
-  - Update the materials with asked questions
-  - Ask questions about next topic & presentation based on written materials & examples & continuous feedback & continuous talk
+  - **Ask questions about next topic** & presentation based on written materials & examples & continuous feedback & continuous talk
   - Individual work after presentation
+
+---
+
+- Prepare the presentation devices:
+  - writing board
+  - video proiector
+- Complete lesson 2 readme
+- Recap the workflow
+- Set the structure: GitHub & Drive
+- Foile de prezenta & upload on Drive
+- Materials recap
+- Overview
+- false explanation
+- **Ask questions about next topic** & presentation based on written materials & examples & continuous feedback & continuous talk
+- Individual work after presentation
