@@ -27,3 +27,12 @@ subset([], []).
 subset([H | T], [H | Subset]) :- subset(T, Subset).
 subset([_ | T], Subset) :- subset(T, Subset).
 ```
+
+```
+% Code that didn't work
+
+ans(X, List) :- length(List, Len), aux(X, Len, List).
+
+aux(H, 2, [H | _]).
+aux(X, N, [_ | Rest]) :- aux(X, OldN, Rest), N is OldN + 1, !.
+```

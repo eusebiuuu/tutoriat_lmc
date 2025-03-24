@@ -4,7 +4,8 @@
 - [Potrivirea si gasirea solutiilor](#potrivirea-si-gasirea-solutiilor)
 - [Aritmetica in Prolog](#aritmetica-in-prolog)
 - [Liste](#liste)
-- [Exercitii](#exercitii)
+- [Exercitii (rezolvate)](#exercitii-rezolvate)
+- [Prezentare curs 4 (slide-urile 40 - 60)](#prezentare-curs-4-slide-urile-40---60)
 
 
 ## Potrivirea si gasirea solutiilor
@@ -108,7 +109,7 @@ R = 1
   - `last(LastElem, Valoare).`
   - `reverse(Linit, Lrez).`
 
-## Exercitii
+## Exercitii (rezolvate)
 - Cerinte:
 ```
 last_but_one(X, L).
@@ -212,3 +213,5 @@ split(_,[],[],[]).
 split(X,[H|T],[H|A],B) :- H < X, split(X,T,A,B).
 split(X,[H|T],A,[H|B]) :- H >= X, split(X,T,A,B).
 ```
+
+## Prezentare curs 4 (slide-urile 40 - 60)
