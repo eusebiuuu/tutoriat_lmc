@@ -1,12 +1,17 @@
-1. Lectia 1: Introducere in Prolog
-   - Notiuni introductive de Prolog cu exemple si analiza
-   - Sintaxa Prolog si operatorii
-   - Pe ce se bazeaza un program in Prolog si ce presupune executia lui
-2. Lectia 2:
+- Lectia 1: Introducere in Prolog
+  - Notiuni introductive de Prolog cu exemple si analiza
+  - Sintaxa Prolog si operatorii
+  - Pe ce se bazeaza un program in Prolog si ce presupune executia lui
+- Lectia 2:
    - Prezentare cursuri 1 - 3
-3. Lectia 3
-   - Potrivirea si gasirea solutiilor
-   - Aritmetica in Prolog
-   - Liste
-   - Exercitii
-   - Prezentare curs 4
+- Lectia 3
+  - Potrivirea si gasirea solutiilor
+  - Aritmetica in Prolog
+  - Liste
+  - Exercitii
+  - Prezentare curs 4
+- Lectia 4
+   - Nu s-a tinut
+- Lectia 5
+   - Recapitulare curs 5 si 6
+   - Rezolvare exercitii seminare 1 si 2 la tabla

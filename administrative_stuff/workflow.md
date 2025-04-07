@@ -1,22 +1,40 @@
 - Set the topics for next lesson
 - Summarize the theory materials
-  - indications: practical examples, intuition, drawings
+  - Format: text, drawing, video
+  - Intuition & practical examples
+  - Questions and exercises throughout
   - [Check the course](https://cs.unibuc.ro/courses/lmc/)
   - [official labs](https://cs.unibuc.ro/courses/lmc/)
-  - Prolog Now pdf
+  - [official seminars](https://cs.unibuc.ro/courses/lmc/)
 - Practice exercises
   - [full seminars](https://github.com/anamariapanait10/FMI-BSc-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
-  - Official labs
   - [99 prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
 - Integrate exam exercises
 - Push the final version and announce the collaborator
 - Make announcement to community about what will be taught next & update the table of contents
 - Teaching plan setting
-  - Prepare the presentation devices:
+  - Materials recap
+  - Presentation preparation:
     - writing board
     - video proiector
-  - Materials recap
   - Foile de prezenta & upload on Drive
   - Overview
-  - **Ask questions about next topic** & presentation based on written materials & examples & continuous feedback & continuous talk
-  - Individual work after presentation
+  - Constant feedback
+  - Examples & intuition
+  - **Recap with questions about taught topics**
+  - Interactive environment
+  - Music in the background
+
+---
+
+- Teaching plan setting
+  - Materials recap
+  - Presentation preparation:
+    - writing board
+    - video proiector
+  - Foile de prezenta & upload on Drive
+  - Overview
+  - Constant feedback
+  - Examples & intuition
+  - **Recap with questions about taught topics**
+  - Music in the background
