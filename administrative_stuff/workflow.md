@@ -28,13 +28,11 @@
 ---
 
 - Teaching plan setting
-  - Materials recap
   - Presentation preparation:
     - writing board
     - video proiector
   - Foile de prezenta & upload on Drive
   - Overview
   - Constant feedback
-  - Examples & intuition
   - **Recap with questions about taught topics**
   - Music in the background
