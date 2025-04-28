@@ -1,13 +1,3 @@
-
-
-Rezolvare exercitii prolog
-- exercitii lab 5
-- ex 3 model examen
-- P16, P18 & use bagof and findall
-
-
-
-
 ## Table of contents
 
 - [Table of contents](#table-of-contents)
@@ -212,6 +202,9 @@ eval(non(T), ListAtoms, Eval) :-
 **Explicație:**
 - Evaluăm atomii căutând valoarea lor.
 - Evaluăm formulele compuse folosind funcțiile logice definite mai jos.
+
+
+---
 
 
 ### Evaluarea pentru toate interpretările
