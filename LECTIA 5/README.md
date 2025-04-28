@@ -2,7 +2,7 @@
 
 - [Table of contents](#table-of-contents)
 - [Cheat sheet for theorem proofs](#cheat-sheet-for-theorem-proofs)
-  - [Exercises (from here)](#exercises-from-here)
+- [Exercitii](#exercitii)
 
 ## Cheat sheet for theorem proofs
 ![axioms](./images/axioms.png)
@@ -14,11 +14,11 @@
 ![](./images/prop_1-66.png)
 ![](./images/prop_1-68.png)
 
-> **IMPORTANT**: [Resource with all proofs from the course](https://github.com/anamariapanait10/FMI-BS-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
+**IMPORTANT**
+- Noi nu ne vom concentra prea mult pe demonstrarea de teoreme pentru ca valoreaza doar 1p (din 12) la examen, este destul de dificil de explicat intuitia din spate si oricum din 2 - 3 exemple nu invatati prea multe. Noi doar va punem la dispozitie de ce teoreme si propozitii sa va folositi ca sa va fie mai usor sa le demonstrati, adica pozele de mai sus
+- Strategia recomandata este sa aveti solutiile la voi (ca aveti voie cu materiale) la cele rezolvate din sursa de mai jos si cele de la seminar
+- Totusi, daca chiar vreti sa invatati sa faceti aceste tipuri de exercitii recomand sa va uitati tot pe seminariile din sursa de mai jos fara sa va uitati la solutii (doar seminariile 6 si 7)
+- [Seminarii 2021](https://github.com/anamariapanait10/FMI-BS-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
 
-### Exercises (from [here](https://github.com/anamariapanait10/FMI-BS-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar))
-- Seminar 5, ex 1 b
-- Seminar 5, ex 2
-- Seminar 9, ex 4
-- Seminar 9, ex 7
-- [Examen](https://github.com/anamariapanait10/FMI-BS-Resources/blob/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/examen/model-examen.pdf): P7, P8, P10, P11, P12, P15
+## Exercitii
+Exercitiile 3 si 4 de [aici](https://drive.google.com/file/d/1O4Z1L1Y0BAP-slbvB_lLyhNZbMWdqImW/view?usp=drive_link)
