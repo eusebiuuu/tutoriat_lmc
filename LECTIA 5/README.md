@@ -21,4 +21,4 @@
 - [Seminarii 2021](https://github.com/anamariapanait10/FMI-BS-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
 
 ## Exercitii
-Exercitiile 3 si 4 de [aici](https://drive.google.com/file/d/1O4Z1L1Y0BAP-slbvB_lLyhNZbMWdqImW/view?usp=drive_link)
+Exercitiile 3 si 4 de [aici](../administrative_stuff/written_materials/materiale_1.pdf)

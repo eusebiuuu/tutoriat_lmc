@@ -1,4 +1,4 @@
-- Set the structure for the next lesson & distribute the work among the team members
+- Set the structure for the next lesson (write ideas on a specific file) & distribute the work among the team members
 - Materials preparation
   - Course
     - Format: text, drawing, video
@@ -30,7 +30,3 @@
   - Examples & intuition
   - **Recap with questions about taught topics**
   - Interactive environment
-
----
-
-- Present lesson 5 updates
