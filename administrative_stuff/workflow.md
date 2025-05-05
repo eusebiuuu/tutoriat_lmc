@@ -7,7 +7,6 @@
     - Recap stage
     - [Course](https://cs.unibuc.ro/courses/lmc/)
   - Lab (la fiecare lectie cate o sesiune de prolog)
-    - Question throughout
     - [official labs](https://cs.unibuc.ro/courses/lmc/)
     - [99 prolog problems](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/)
   - Seminar
