@@ -10,6 +10,7 @@
 
 > Tutori: Popa Teodora, Rîmboi Eusebiu
 
+- Daca va intereseaza pe ce capitole si exercitii sa va axati pentru examen uitati-va [aici](./administrative_stuff/written_materials/ce_se_da_la_examen.pdf).
 - Daca vreti sa exersati mai mult la prolog, va recomand [site-ul asta](https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/).
 - [Repo cu diverse materiale (probleme si solutii) pentru seminar din anii precedenti (cand nu se facea prolog, deci era mai multa materie la seminar)](https://github.com/anamariapanait10/FMI-BS-Resources/tree/master/Year%20I/sem%201/Logica%20matematica%20si%20computationala/seminar)
 
@@ -44,3 +45,8 @@
 - Lectia 6
   - Recapitulare cursuri 7 - 8
   - Rezolvare exercitii seminar
+- Lectia 7
+  - Laboratorul 5 de prolog
+  - Exercitii colocviu prolog
+- Lectia 8
+  - Prezentare curs **Logica de ordinul I**

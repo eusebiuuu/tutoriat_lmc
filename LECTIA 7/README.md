@@ -17,7 +17,8 @@
     - [Evaluarea pe toate interpretările (`all_evals/2`)](#evaluarea-pe-toate-interpretările-all_evals2)
   - [Verificarea tautologiilor (`taut/1`)](#verificarea-tautologiilor-taut1)
   - [Exemplu](#exemplu)
-  - [Concluzie](#concluzie)
+  - [Tot codul (sa il aveti la indemana)](#tot-codul-sa-il-aveti-la-indemana)
+    - [Exercitiu Prolog (model colocviu)](#exercitiu-prolog-model-colocviu)
 
 
 ## Alte functii utile de Prolog
@@ -74,8 +75,7 @@ val(Atom, [_|T], Res) :-
 
 **Exemplu:**
 - Lista: `[(p,1), (q,0), (r,1)]`
-- Căutăm valoarea lui `q` $
-ightarrow$ obținem `0`.
+- Căutăm valoarea lui `q` $\rightarrow$ obținem `0`.
 
 Această funcție este esențială pentru evaluarea formulelor în funcție de interpretare.
 
@@ -196,22 +196,20 @@ eval(non(T), ListAtoms, Eval) :-
 - Evaluăm atomii căutând valoarea lor.
 - Evaluăm formulele compuse folosind funcțiile logice definite mai jos.
 
-
----
-
-evs([V], [(V, 0), (V, 1)]).
-evs([V | Rest], Evals) := evs(Rest, Res1), append_to_array(V, Res1, Evals).
-
-
-
 ### Evaluarea pentru toate interpretările
 
 #### Generarea combinațiilor (`evs/2`)
 
 ```prolog
-evs(ListAtoms, Res) :-
-    repl(ListAtoms, AllEvals),
-    aux(ListAtoms, AllEvals, Res).
+evs([V], [[(V, 0)], [(V, 1)]]).
+evs([V | Rest], Evals) :- evs(Rest, Res1), append_to_array(Res1, V, Evals).
+
+append_to_list(List, V, [L1, L2]) :-
+    append([(V, 0)], List, L1), append([(V, 1)], List, L2).
+
+append_to_array([L], V, Res) :- append_to_list(L, V, Res).
+append_to_array([L | Rest], V, Res) :- 
+	append_to_list(L, V, Res1), append_to_array(Rest, V, Res2), append(Res1, Res2, Res).
 ```
 
 Funcțiile `repl/2` și `aux/3` generează toate combinațiile de valori posibile și le asociază cu variabilele.
@@ -254,9 +252,110 @@ true.
 
 Interpretarea pentru toate combinațiile posibile va returna mereu `true`.
 
-### Concluzie
+### Tot codul (sa il aveti la indemana)
+```prolog
+% Căutarea valorii unei variabile (val/3)
+val(Atom, [(Atom, Val)|_], Val).
+val(Atom, [_|T], Res) :-
+    val(Atom, T, Res).
 
-Am implementat un sistem complet în Prolog pentru:
-- Extracția variabilelor dintr-o formulă.
-- Evaluarea formulei pe toate interpretările posibile.
-- Verificarea dacă o formulă este tautologie.
+% Extracția variabilelor (vars/2)
+vars(X, [X]) :- atom(X).
+
+vars(imp(T1, T2), Res) :-
+    vars(T1, Res1),
+    vars(T2, Res2),
+    union(Res1, Res2, Res).
+
+vars(non(T), Res) :-
+    vars(T, Res).
+
+vars(si(T1, T2), Res) :-
+    vars(T1, Res1),
+    vars(T2, Res2),
+    union(Res1, Res2, Res).
+
+vars(sau(T1, T2), Res) :-
+    vars(T1, Res1),
+    vars(T2, Res2),
+    union(Res1, Res2, Res).
+
+% Evaluarea formulelor (eval/3)
+eval(Atom, ListAtoms, Eval) :-
+    val(Atom, ListAtoms, Eval).
+
+eval(imp(T1, T2), ListAtoms, Eval) :-
+    eval(T1, ListAtoms, EvalT1),
+    eval(T2, ListAtoms, EvalT2),
+    bimp(EvalT1, EvalT2, Eval).
+
+eval(si(T1, T2), ListAtoms, Eval) :-
+    eval(T1, ListAtoms, EvalT1),
+    eval(T2, ListAtoms, EvalT2),
+    band(EvalT1, EvalT2, Eval).
+
+eval(sau(T1, T2), ListAtoms, Eval) :-
+    eval(T1, ListAtoms, EvalT1),
+    eval(T2, ListAtoms, EvalT2),
+    bsau(EvalT1, EvalT2, Eval).
+
+eval(non(T), ListAtoms, Eval) :-
+    eval(T, ListAtoms, EvalT),
+    bnon(EvalT, Eval).
+
+% Operații logice de bază
+
+% Negare (bnon/2)
+bnon(0, 1).
+bnon(1, 0).
+
+% Implicație (bimp/3)
+bimp(0, _, 1).
+bimp(1, 0, 0).
+bimp(1, 1, 1).
+
+% Disjuncție (bsau/3)
+bsau(P, Q, Res) :-
+    bnon(P, NonP),
+    bimp(NonP, Q, Res).
+
+% Conjuncție (band/3)
+band(1, 1, 1).
+band(0, _, 0).
+band(_, 0, 0).
+
+% Functia evs genereaza toate evaluarile posibile pentru lista de variabile data in primul parametru
+evs([V], [[(V, 0)], [(V, 1)]]).
+evs([V | Rest], Evals) :- evs(Rest, Res1), append_to_array(Res1, V, Evals).
+
+append_to_list(List, V, [L1, L2]) :-
+    append([(V, 0)], List, L1), append([(V, 1)], List, L2).
+
+append_to_array([L], V, Res) :- append_to_list(L, V, Res).
+append_to_array([L | Rest], V, Res) :- 
+	append_to_list(L, V, Res1), append_to_array(Rest, V, Res2), append(Res1, Res2, Res).
+
+% Functia evals afiseaza rezultatul formulei pentru fiecare evaluare data
+evals(_, [], []).
+evals(X, [E|Es], [A|As]) :-
+    eval(X, E, A),
+    evals(X, Es, As).
+
+% Functia all_evals returneaza rezultatul formulei in toate evaluarile posibile
+% Daca este tautologie atunci `Res` este format doar din 1
+all_evals(F, Res) :- vars(F, VarsList), evs(VarsList, AllEvals), evals(F, AllEvals, Res).
+```
+
+#### Exercitiu Prolog (model colocviu)
+- Consideram in continuare reprezentarea formulelor logicii propozitionale folosita in
+laboratorul 5. Scrieti un predicat rmdn/2 cu proprietatea ca `rmdn(Phi, Psi)` este adevarat daca si
+numai daca Psi este rezultatul eliminarii tuturor negatiilor duble din Phi.
+
+```prolog
+rmdn(Phi, Phi) :- atom(Phi).
+rmdn(si(Phi, Psi), si(Phi1, Psi1)) :- rmdn(Phi, Phi1), rmdn(Psi, Psi1).
+rmdn(sau(Phi, Psi), sau(Phi1, Psi1)) :- rmdn(Phi, Phi1), rmdn(Psi, Psi1).
+rmdn(imp(Phi, Psi), imp(Phi1, Psi1)) :- rmdn(Phi, Phi1), rmdn(Psi, Psi1).
+rmdn(non(non(Phi)), Psi) :- rmdn(Phi, Psi), !.
+rmdn(non(Phi), non(Psi)) :- rmdn(Phi, Psi).
+```
