@@ -49,4 +49,10 @@
   - Laboratorul 5 de prolog
   - Exercitii colocviu prolog
 - Lectia 8
-  - Prezentare curs **Logica de ordinul I**
+  - Prezentare curs **Logica de ordinul I**: introducere si semantica
+- Lectia 9
+  - Rezolvari modele de colocviu
+- Lectia 10
+  - Prezentare curs **Logica de ordinul I**: substitutii, forme normale
+  - Exercitii seminarii 5 si 6
+  - Rezolvare model examen
